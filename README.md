@@ -92,7 +92,7 @@ Basta entrar no site em "Ver demonstração" abaixo do ícone aqui no readme, pe
 
 Precisará ter em mãos um QRCode viável ao projeto de pagamento.
 * Formato padrão atual do QRCode
-```sh
+```json
 {
     "VALOR":20.0,
     "METODO":"Crédito",
