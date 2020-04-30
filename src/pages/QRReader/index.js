@@ -4,7 +4,7 @@ import QrReader from 'react-qr-reader';
 
 import './styles.css';
 
-import { getJsonFrom } from '../QRToData';
+import { getJsonFrom } from '../../assets/Componentes/QRToData';
 
 export default function QRReader() {
 
