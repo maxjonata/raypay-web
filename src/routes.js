@@ -16,14 +16,9 @@ import Confirmation from './pages/Confirmation';
 <Route path="/information/confirm" component={Confirmation}/>
 */
 export default function Routes() {
-    const screenref = useRef(null);
-    useEffect(() => {
-        screenref.current.requestFullscreen();
-    })
-
     return(
         <BrowserRouter>
-            <Switch ref={screenref}>
+            <Switch>
                 <Route path="/" exact component={Start}/>
                 <Route path="/lendo" exact component={QRReader}/>
                 <Route path="/information" component={ObjectTalkBack}/>
