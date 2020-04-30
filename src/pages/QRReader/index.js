@@ -5,13 +5,15 @@ import QrReader from 'react-qr-reader';
 import './styles.css';
 
 import { getJsonFrom } from '../../assets/Componentes/QRToData';
+import { useHistory } from 'react-router-dom';
 
 export default function QRReader() {
+	const history = useHistory();
 
 	function handleScan(data) {
 		if (data && (getJsonFrom(data) !== false)) {
 			localStorage.setItem('data', data);
-			this.props.history.push("/information");
+			history.push("/information");
 		}
 	}
 	
