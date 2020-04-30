@@ -1,0 +1,20 @@
+.testAlert-container {
+    color: black;
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.testAlert-informationText {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.testAlert-confirmButton {
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 75, 12, .50);
+}

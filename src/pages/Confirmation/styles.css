@@ -1,0 +1,21 @@
+.confirmation-container {
+    color: black;
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.confirmation-confirmButton p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.confirmation-confirmButton {
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(168, 195, 38, .50);
+}
