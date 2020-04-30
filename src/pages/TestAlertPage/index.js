@@ -1,12 +1,13 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles.css';
 
 export default function TestAlertPage() {
     
+    const [HTML, setHTML] = useState((<div></div>));
     const permission = navigator.mediaDevices.getUserMedia({video: true}, ()=>{ //Caso tenha permissão
-        return (
+        setHTML(
             <Link className="button testAlert-container testAlert-confirmButton"  to="/lendo" >
                 <p className="testAlert-informationText">Aplicativo web para testes, haverão limitações do navegador.</p>
                 <br/>
@@ -15,7 +16,7 @@ export default function TestAlertPage() {
         )
     }, ()=>{ //Caso não tenha permissão
 
-        return (
+        setHTML(
             <div>
                 <h1>Você não concedeu permissao à camera!</h1>
                 <h2>No navegador GoogleChrome, para que tenhamos acesso a sua camera, siga as seguintes etapas:</h2>
@@ -29,4 +30,6 @@ export default function TestAlertPage() {
             </div>
         )
     });
+
+    return HTML;
 }
