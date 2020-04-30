@@ -9,7 +9,7 @@ import { getJsonFrom } from '../../assets/Componentes/QRToData';
 export default function QRReader() {
 
 	function handleScan(data) {
-		if (data && getJsonFrom(data)) {
+		if (data && (getJsonFrom(data) !== false)) {
 			localStorage.setItem('data', data);
 			this.props.history.push("/information");
 		}
