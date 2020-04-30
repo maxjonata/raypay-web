@@ -23,7 +23,7 @@ export default function Routes() {
 
     return(
         <BrowserRouter>
-            <Switch>
+            <Switch ref={screenref}>
                 <Route path="/" exact component={Start}/>
                 <Route path="/lendo" exact component={QRReader}/>
                 <Route path="/information" component={ObjectTalkBack}/>
