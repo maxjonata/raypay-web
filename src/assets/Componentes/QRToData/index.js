@@ -1,5 +1,8 @@
 export function getJsonFrom(dataString) {
     const dataJson = JSON.parse(dataString);
+    console.log(dataJson);
+    console.log(dataString);
+
     const place    = dataJson.ESTABELECIMENTO        || null;
     const value    = dataJson.VALOR                  || null;
     const method   = dataJson.METODO                 || null;
