@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import QrReader from 'react-qr-reader';
 
 import './styles.css';
