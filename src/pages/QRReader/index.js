@@ -29,7 +29,6 @@ export default function QRReader() {
 			onScan={handleScan}
 			facingMode={"environment"}
 			showViewFinder={false}
-			legacyMode={true}
 			/>
 				<div className="qr-textBox">
 				<p>Aponte a câmera para ler o código.</p>
