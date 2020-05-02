@@ -12,8 +12,7 @@ export default function QRReader() {
 
 	function handleScan(data) {
 		if (data && (getJsonFrom(data) !== false)) {
-			localStorage.setItem('data', data);
-			history.push("/information");
+			history.push("/information", {data: data});
 		}
 	}
 	
@@ -30,7 +29,7 @@ export default function QRReader() {
 			onScan={handleScan}
 			facingMode={"environment"}
 			showViewFinder={false}
-
+			legacyMode={true}
 			/>
 				<div className="qr-textBox">
 				<p>Aponte a câmera para ler o código.</p>
