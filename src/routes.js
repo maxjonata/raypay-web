@@ -5,6 +5,8 @@ import QRReader from './pages/QRReader';
 import ObjectTalkBack from './pages/ObjectTalkBack';
 import Confirmation from './pages/Confirmation';
 import Start from './pages/TestAlertPage';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 /*
 import Loading from './pages/Loading';
 import ObjectTalkBack from './pages/ObjectTalkBack';

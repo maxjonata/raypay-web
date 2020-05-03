@@ -26,8 +26,8 @@ https://github.com/othneildrew/Best-README-Template/blob/master/README.md
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/maxjonata/raypay-web">
+    <img src="public/icon512.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">RayPay QR</h3>
@@ -66,8 +66,6 @@ https://github.com/othneildrew/Best-README-Template/blob/master/README.md
 <!-- ABOUT THE PROJECT -->
 ## Sobre o projeto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Existem muitas idéias de soluções para acessibilidade de compra física para cegos, mas todas parecem poucos viáveis financeiramente. A RayPay decide então criar um projeto que seja verdadeiramente "Acessível". Esta é a versão inteiramente WEB e responsiva deste projeto que se baseia primáriamente em App.
 
 Motivos para versão WEB:
@@ -77,7 +75,6 @@ Motivos para versão WEB:
 Lembrando que o objetivo deste não é ser a versão final, mas sim funcional para um teste geral.
 
 ### Criado com
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [React](https://pt-br.reactjs.org)
 
@@ -92,8 +89,9 @@ Basta entrar no site em "Ver demonstração" abaixo do ícone aqui no readme, pe
 
 Precisará ter em mãos um QRCode viável ao projeto de pagamento.
 * Formato padrão atual do QRCode
-```json
+```javascript
 {
+    "ESTABELECIMENTO":"Loja de Teste",
     "VALOR":20.0,
     "METODO":"Crédito",
     "QUANTIDADE_DE_PARCELAS":4.0
@@ -115,8 +113,6 @@ _No caso de números decimais, a separação é feita por ponto em vez de vírgu
 
 Aponte a câmera para um código QR e retornará as informações de forma legível e acessível por talkback, a partir daí é só confirmar ou cancelar para ler um novo.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
 
 
 <!-- ROADMAP -->
@@ -128,6 +124,7 @@ Veja a janela de [issues](https://github.com/maxjonata/raypay-web/issues) para u
 ## Contatos
 
 João Alfredo - joaoalfredoff@outlook.com.br
+Ruan Lima - kkoru19@gmail.com
 
 Project Link: [https://github.com/maxjonata/raypay-web](https://github.com/maxjonata/raypay-web)
 
@@ -155,15 +152,12 @@ Project Link: [https://github.com/maxjonata/raypay-web](https://github.com/maxjo
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/maxjonata/raypay-web/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/maxjonata/raypay-web/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/maxjonata/raypay-web/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/maxjonata/raypay-web/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[license-url]: https://github.com/maxjonata/raypay-web/blob/master/LICENSE.txt

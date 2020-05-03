@@ -1,39 +1,38 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import QrReader from 'react-qr-reader';
 
-import './styles.css'
+import './styles.css';
 
-export default class QRReader extends Component {
+import { getJsonFrom } from '../../assets/Componentes/QRToData';
+import { useHistory } from 'react-router-dom';
 
-  handleScan = data => {
-    if (data) {
-      localStorage.setItem('data', data)
+export default function QRReader() {
+	const history = useHistory();
 
-      this.props.history.push("/information");
-    }
-  }
+	function handleScan(data) {
+		if (data && (getJsonFrom(data) !== false)) {
+			history.push("/information", {data: data});
+		}
+	}
+	
+	function handleError(err) {
+		console.error(err)
+	}
 
-  handleError = err => {
-    console.error(err)
-  }
-
-  render() {
     return (
-      <div className="qr-container">
-        <QrReader
-          className="qr-reader"
-          delay={0}
-          onError={this.handleError}
-          onScan={this.handleScan}
-          facingMode={"environment"}
-          showViewFinder={false}
-
-        />
-        <div className="qr-textBox">
-          <p>Aponte a câmera para ler o código.</p>
-        </div>
-      </div>
+		<div className="qr-container">
+			<QrReader
+			className="qr-reader"
+			delay={0}
+			onError={handleError}
+			onScan={handleScan}
+			facingMode={"environment"}
+			showViewFinder={false}
+			/>
+				<div className="qr-textBox">
+				<p>Aponte a câmera para ler o código.</p>
+			</div>
+		</div>
     )
-  }
 };
