@@ -14,10 +14,6 @@ import { useEffect } from 'react';
 export default function ObjectTalkBack() {
     const location = useLocation();
 
-    useEffect(() => {
-        document.getElementById("DataList").focus();
-    });
-
     return (
         <div className="objTalkBack-container">
             <FullscreenButton/>

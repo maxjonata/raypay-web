@@ -8,6 +8,10 @@ import { getJsonFrom } from '../QRToData';
 
 export default class AccessibilityDataList extends Component { //Componente de informações
 
+    componentDidMount() {
+        document.getElementById("DataList").focus();
+    }
+
     render() {
         const {place, value, method, parcels} = getJsonFrom(this.props.dataString);
         
