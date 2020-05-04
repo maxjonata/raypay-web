@@ -40,7 +40,7 @@ export default function FullscreenButton(props) { //Componente de informações
     return (
         <Fab
         alt={(FullscreenEnabled)?"Desativar tela cheia":"Ativar tela cheia"}
-        aria-label="fullscreen"
+        aria-label={(FullscreenEnabled)?"Desativar tela cheia":"Ativar tela cheia"}
         onClick={fullscreenSwitch}
         id="fullscreenFab"
         tabIndex={(props.tabIndex !== undefined)?props.tabIndex:undefined}
