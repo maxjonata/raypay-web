@@ -13,7 +13,7 @@ export default function TestAlertPage() {
     });
 
     return (
-        <div>
+        <div className="testAlert-container">
             <FullscreenButton/>
             <Link className="button testAlert-container testAlert-confirmButton"  to="/lendo" >
                 <p className="testAlert-informationText">Aplicativo web para testes, haverão limitações do navegador.</p>
