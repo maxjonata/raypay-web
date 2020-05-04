@@ -1,0 +1,6 @@
+#fullscreenFab {
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, -10px);
+}

@@ -7,10 +7,14 @@ import './styles.css';
 import mp3_file from '../../assets/Sounds/bleepRead.mp3';
 import { useLocation } from 'react-router-dom';
 
+import FullscreenButton from '../../assets/Componentes/FullscreenButton';
+
+
 export default function ObjectTalkBack() {
     const location = useLocation();
     return (
         <div className="objTalkBack-container">
+            <FullscreenButton/>
             <audio id="audio" src={mp3_file} autoPlay/>
             <AccessibilityDataList dataString={location.state.data}/>
             <Choices />

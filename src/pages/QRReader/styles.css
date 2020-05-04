@@ -28,3 +28,15 @@
     font-weight: bold;
     font-size: 20px
 }
+
+#text {
+    position: fixed;
+    width: 18em;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -10px);
+    font-weight: 800;
+    background-color: rgba(250, 235, 215, 0.137);
+    border-radius: 30px;
+    padding: 10px;
+}

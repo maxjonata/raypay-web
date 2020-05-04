@@ -7,6 +7,8 @@ import './styles.css';
 import { getJsonFrom } from '../../assets/Componentes/QRToData';
 import { useHistory } from 'react-router-dom';
 
+import FullscreenButton from '../../assets/Componentes/FullscreenButton';
+
 export default function QRReader() {
 	const history = useHistory();
 
@@ -30,9 +32,8 @@ export default function QRReader() {
 			facingMode={"environment"}
 			showViewFinder={false}
 			/>
-				<div className="qr-textBox">
-				<p>Aponte a câmera para ler o código.</p>
-			</div>
+				<FullscreenButton tabIndex="2"/>
+				<p tabIndex="1" id="text">Aponte a câmera para ler o código.</p>
 		</div>
     )
 };
