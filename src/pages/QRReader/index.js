@@ -8,6 +8,7 @@ import { getJsonFrom } from '../../assets/Componentes/QRToData';
 import { useHistory } from 'react-router-dom';
 
 import FullscreenButton from '../../assets/Componentes/FullscreenButton';
+import { useEffect } from 'react';
 
 export default function QRReader() {
 	const history = useHistory();
@@ -22,6 +23,10 @@ export default function QRReader() {
 		console.error(err)
 	}
 
+	useEffect(() => {
+        document.getElementById("text").focus();
+    });
+
     return (
 		<div className="qr-container">
 			<QrReader
@@ -34,6 +39,7 @@ export default function QRReader() {
 			/>
 				<FullscreenButton tabIndex="2"/>
 				<p tabIndex="1" id="text">Aponte a câmera para ler o código.</p>
+
 		</div>
     )
 };

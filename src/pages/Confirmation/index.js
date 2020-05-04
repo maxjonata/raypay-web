@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles.css';
@@ -6,16 +6,21 @@ import './styles.css';
 import FullscreenButton from '../../assets/Componentes/FullscreenButton';
 
 
-export default class Confirmation extends Component {
+export default function Confirmation {
 
-    render() {
-        return(
-            <Link className="button confirmation-container confirmation-confirmButton"  to="/lendo">
-                <FullscreenButton/>
+    useEffect(() => {
+        document.getElementById("ConfirmButton").focus();
+    });
+
+    return(
+        <div>
+            <FullscreenButton/>
+            <Link tabIndex="1" id="ConfirmButton" className="button confirmation-container confirmation-confirmButton"  to="/lendo">
                 <p>Compra confirmada com sucesso!</p>
                 <p>Pressione para ler outro QR</p>
             </Link>
-        );
-    }
+        </div>
+        
+    );
     
 }

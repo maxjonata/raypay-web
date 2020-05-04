@@ -12,7 +12,7 @@ export default class AccessibilityDataList extends Component { //Componente de i
         const {place, value, method, parcels} = getJsonFrom(this.props.dataString);
         
         return (
-            <div className="accessibilityDataList-informationContainer">
+            <div className="accessibilityDataList-informationContainer" id={this.props.id}>
                 <p>Compra sendo efetuada em {place} com:</p>
                 <br/><br/><br/>
                 <p>Valor de {Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(value)}.</p><br/>
