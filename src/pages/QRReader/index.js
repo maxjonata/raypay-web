@@ -16,7 +16,7 @@ export default function QRReader() {
 	function handleScan(data) {
 		if (data) {
 			const jsonData = getJsonFrom(data);
-			console.log(jsonData);
+			console.log("teste" + jsonData);
 			if(jsonData !== false) history.push("/information", {data: data});
 		}
 	}
