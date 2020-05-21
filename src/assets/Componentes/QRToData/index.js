@@ -4,7 +4,7 @@ export function getJsonFrom(dataString) {
     var cantgo = false;
     var data;
 
-    api.get('compra_do_qr', {
+    api.post('compra_do_qr', {
         headers: {
             'Content-Type': 'application/json'
         },

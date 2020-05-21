@@ -14,10 +14,10 @@ export default function QRReader() {
 	const history = useHistory();
 
 	function handleScan(data) {
-		const jsonData = getJsonFrom(data);
-		console.log(jsonData);
-		if (data && (jsonData !== false)) {
-			history.push("/information", {data: data});
+		if (data) {
+			const jsonData = getJsonFrom(data);
+			console.log(jsonData);
+			if(jsonData !== false) history.push("/information", {data: data});
 		}
 	}
 	
