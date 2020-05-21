@@ -1,10 +1,9 @@
 import api from '../../../services/api';
 
-export function getJsonFrom(dataString) {
-    var cantgo = false;
+export async function getJsonFrom(dataString) {
     var data;
 
-    api.post('compra_do_qr', {
+    await api.post('compra_do_qr', {
         headers: {
             'Content-Type': 'application/json'
         },
@@ -19,8 +18,7 @@ export function getJsonFrom(dataString) {
           parcels: response.parcels
         }
     })
-
-    while(cantgo) {}
+    
     return data;
 
     /*
