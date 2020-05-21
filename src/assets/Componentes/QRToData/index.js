@@ -1,8 +1,7 @@
 import api from '../../../services/api';
 
 export function getJsonFrom(dataString) {
-
-    api.get('', {
+    return api.get('', {
         headers: {
             'Content-Type': 'application/json'
         },
@@ -10,12 +9,12 @@ export function getJsonFrom(dataString) {
             'qrcode': dataString
         }
     }).then(response => {
-        return{
+        return {
             place: response.place,
             value: response.value,
            method: response.method,
           parcels: response.parcels
-      }
+        }
     })
 
     /*
